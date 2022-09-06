@@ -20,6 +20,7 @@ This function will create and insert/append the elements needed to display a "pa
 
 let itemsPerPage = 9
 
+//showPage function
 function showPage(list, page){
    let startIndex = (page * itemsPerPage) - itemsPerPage
    let endIndex = page * itemsPerPage
@@ -47,6 +48,7 @@ function showPage(list, page){
 Create the `addPagination` function
 This function will create and insert/append the elements needed for the pagination buttons
 */
+//addPagination function
 function addPagination(list){
    let pageButtons = Math.ceil(list.length / itemsPerPage);
    let linkList = document.querySelector('ul.link-list');
